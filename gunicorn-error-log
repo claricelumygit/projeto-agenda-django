@@ -751,3 +751,9 @@
  - - [30/Sep/2024:11:12:58 -0300] "GET / HTTP/1.1" 200 9867 "-" "-"
 [2024-09-30 11:13:08 -0300] [1793] [DEBUG] GET /
  - - [30/Sep/2024:11:13:08 -0300] "GET / HTTP/1.1" 200 10018 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36"
+[2024-09-30 11:15:54 -0300] [1789] [DEBUG] GET /
+ - - [30/Sep/2024:11:15:54 -0300] "GET / HTTP/1.1" 200 9867 "-" "-"
+[2024-09-30 11:15:59 -0300] [1792] [DEBUG] GET /
+ - - [30/Sep/2024:11:15:59 -0300] "GET / HTTP/1.1" 200 9867 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2024-09-30 11:15:59 -0300] [1791] [DEBUG] GET /favicon.ico
+ - - [30/Sep/2024:11:15:59 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
