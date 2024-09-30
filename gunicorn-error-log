@@ -757,3 +757,245 @@
  - - [30/Sep/2024:11:15:59 -0300] "GET / HTTP/1.1" 200 9867 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
 [2024-09-30 11:15:59 -0300] [1791] [DEBUG] GET /favicon.ico
  - - [30/Sep/2024:11:15:59 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2024-09-30 11:21:51 -0300] [1792] [INFO] Worker exiting (pid: 1792)
+[2024-09-30 11:21:51 -0300] [1789] [INFO] Worker exiting (pid: 1789)
+[2024-09-30 11:21:51 -0300] [1788] [INFO] Worker exiting (pid: 1788)
+[2024-09-30 11:21:51 -0300] [1790] [INFO] Worker exiting (pid: 1790)
+[2024-09-30 11:21:51 -0300] [1793] [INFO] Worker exiting (pid: 1793)
+[2024-09-30 11:21:51 -0300] [1791] [INFO] Worker exiting (pid: 1791)
+[2024-09-30 14:21:51 +0000] [1787] [INFO] Handling signal: term
+[2024-09-30 14:21:51 +0000] [1787] [ERROR] Worker (pid:1788) was sent SIGTERM!
+[2024-09-30 14:21:51 +0000] [1787] [ERROR] Worker (pid:1789) was sent SIGTERM!
+[2024-09-30 14:21:51 +0000] [1787] [ERROR] Worker (pid:1792) was sent SIGTERM!
+[2024-09-30 14:21:51 +0000] [1787] [ERROR] Worker (pid:1790) was sent SIGTERM!
+[2024-09-30 14:21:51 +0000] [1787] [ERROR] Worker (pid:1793) was sent SIGTERM!
+[2024-09-30 14:21:51 +0000] [1787] [ERROR] Worker (pid:1791) was sent SIGTERM!
+[2024-09-30 14:21:51 +0000] [1787] [INFO] Shutting down: Master
+[2024-09-30 14:21:51 +0000] [2408] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4ed70f0cc0>
+  on_reload: <function OnReload.on_reload at 0x7f4ed70f0e00>
+  when_ready: <function WhenReady.when_ready at 0x7f4ed70f0f40>
+  pre_fork: <function Prefork.pre_fork at 0x7f4ed70f1080>
+  post_fork: <function Postfork.post_fork at 0x7f4ed70f11c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4ed70f1300>
+  worker_int: <function WorkerInt.worker_int at 0x7f4ed70f1440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4ed70f1580>
+  pre_exec: <function PreExec.pre_exec at 0x7f4ed70f16c0>
+  pre_request: <function PreRequest.pre_request at 0x7f4ed70f1800>
+  post_request: <function PostRequest.post_request at 0x7f4ed70f18a0>
+  child_exit: <function ChildExit.child_exit at 0x7f4ed70f19e0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4ed70f1b20>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4ed70f1c60>
+  on_exit: <function OnExit.on_exit at 0x7f4ed70f1da0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f4ed70f1f80>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-30 14:21:51 +0000] [2408] [INFO] Starting gunicorn 23.0.0
+[2024-09-30 14:21:51 +0000] [2408] [DEBUG] Arbiter booted
+[2024-09-30 14:21:51 +0000] [2408] [INFO] Listening at: unix:/run/agenda.socket (2408)
+[2024-09-30 14:21:51 +0000] [2408] [INFO] Using worker: sync
+[2024-09-30 14:21:51 +0000] [2409] [INFO] Booting worker with pid: 2409
+[2024-09-30 14:21:51 +0000] [2410] [INFO] Booting worker with pid: 2410
+[2024-09-30 14:21:51 +0000] [2411] [INFO] Booting worker with pid: 2411
+[2024-09-30 14:21:51 +0000] [2412] [INFO] Booting worker with pid: 2412
+[2024-09-30 14:21:52 +0000] [2413] [INFO] Booting worker with pid: 2413
+[2024-09-30 14:21:52 +0000] [2414] [INFO] Booting worker with pid: 2414
+[2024-09-30 14:21:52 +0000] [2408] [DEBUG] 6 workers
+[2024-09-30 11:22:05 -0300] [2412] [DEBUG] GET /
+ - - [30/Sep/2024:11:22:05 -0300] "GET / HTTP/1.1" 200 10018 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36"
+[2024-09-30 11:23:05 -0300] [2409] [INFO] Worker exiting (pid: 2409)
+[2024-09-30 11:23:05 -0300] [2411] [INFO] Worker exiting (pid: 2411)
+[2024-09-30 11:23:05 -0300] [2410] [INFO] Worker exiting (pid: 2410)
+[2024-09-30 11:23:05 -0300] [2414] [INFO] Worker exiting (pid: 2414)
+[2024-09-30 11:23:05 -0300] [2412] [INFO] Worker exiting (pid: 2412)
+[2024-09-30 11:23:05 -0300] [2413] [INFO] Worker exiting (pid: 2413)
+[2024-09-30 14:23:05 +0000] [2408] [INFO] Handling signal: term
+[2024-09-30 14:23:05 +0000] [2408] [ERROR] Worker (pid:2411) was sent SIGTERM!
+[2024-09-30 14:23:05 +0000] [2408] [ERROR] Worker (pid:2409) was sent SIGTERM!
+[2024-09-30 14:23:05 +0000] [2408] [ERROR] Worker (pid:2412) was sent SIGTERM!
+[2024-09-30 14:23:05 +0000] [2408] [ERROR] Worker (pid:2413) was sent SIGTERM!
+[2024-09-30 14:23:05 +0000] [2408] [ERROR] Worker (pid:2414) was sent SIGTERM!
+[2024-09-30 14:23:05 +0000] [2408] [ERROR] Worker (pid:2410) was sent SIGTERM!
+[2024-09-30 14:23:05 +0000] [2408] [INFO] Shutting down: Master
+[2024-09-30 14:23:05 +0000] [2448] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f142c28ccc0>
+  on_reload: <function OnReload.on_reload at 0x7f142c28ce00>
+  when_ready: <function WhenReady.when_ready at 0x7f142c28cf40>
+  pre_fork: <function Prefork.pre_fork at 0x7f142c28d080>
+  post_fork: <function Postfork.post_fork at 0x7f142c28d1c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f142c28d300>
+  worker_int: <function WorkerInt.worker_int at 0x7f142c28d440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f142c28d580>
+  pre_exec: <function PreExec.pre_exec at 0x7f142c28d6c0>
+  pre_request: <function PreRequest.pre_request at 0x7f142c28d800>
+  post_request: <function PostRequest.post_request at 0x7f142c28d8a0>
+  child_exit: <function ChildExit.child_exit at 0x7f142c28d9e0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f142c28db20>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f142c28dc60>
+  on_exit: <function OnExit.on_exit at 0x7f142c28dda0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f142c28df80>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-30 14:23:05 +0000] [2448] [INFO] Starting gunicorn 23.0.0
+[2024-09-30 14:23:05 +0000] [2448] [DEBUG] Arbiter booted
+[2024-09-30 14:23:05 +0000] [2448] [INFO] Listening at: unix:/run/agenda.socket (2448)
+[2024-09-30 14:23:05 +0000] [2448] [INFO] Using worker: sync
+[2024-09-30 14:23:05 +0000] [2449] [INFO] Booting worker with pid: 2449
+[2024-09-30 14:23:05 +0000] [2450] [INFO] Booting worker with pid: 2450
+[2024-09-30 14:23:05 +0000] [2451] [INFO] Booting worker with pid: 2451
+[2024-09-30 14:23:05 +0000] [2452] [INFO] Booting worker with pid: 2452
+[2024-09-30 14:23:05 +0000] [2453] [INFO] Booting worker with pid: 2453
+[2024-09-30 14:23:05 +0000] [2448] [DEBUG] 6 workers
+[2024-09-30 14:23:05 +0000] [2454] [INFO] Booting worker with pid: 2454
+[2024-09-30 11:23:17 -0300] [2453] [DEBUG] GET /
+ - - [30/Sep/2024:11:23:17 -0300] "GET / HTTP/1.1" 200 10018 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36"
